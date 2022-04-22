@@ -3,9 +3,9 @@ import { usePostStore } from "./posts";
 
 export const useAuthorStore = defineStore({
   id: "author",
-  state: () => {
-    [];
-  },
+  state: () => ({
+    authors: [],
+  }),
   getters: {
     getPostAuthor: (state) => {
       const postStore = usePostStore();

@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { usePostStore } from "./post";
+import { usePostStore } from "./posts";
 
 export const useCommentStore = defineStore({
   id: "comment",
