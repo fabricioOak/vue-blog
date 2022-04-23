@@ -21,9 +21,18 @@ fetchPosts();
       <RouterLink
         class="fs-3 text-decoration-none text-black fw-bold card-title"
         :to="`/post/${post.id}`"
-        >{{ post.title }}</RouterLink
+        >{{ post.title.toUpperCase() }}</RouterLink
       >
       <p class="card-subtitle">{{ post.body }}</p>
+      <span class="mt-2">
+        <button class="btn btn-danger">
+          <RouterLink
+            class="text-decoration-none text-white fw-bold"
+            :to="`/post/${post.id}`"
+            >Read</RouterLink
+          >
+        </button>
+      </span>
     </div>
   </main>
 </template>
